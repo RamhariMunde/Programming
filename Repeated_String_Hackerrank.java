@@ -14,15 +14,16 @@
 
 // n: the number of characters to consider
 
-public class Repeated_String_Hackerrank {
+public class Repeated_String_Hackerrank {  // you use only line number 18 To 33 Code.
     static long Repeated_String_Hackerrank(String s, long n){
         int strLength = s.length();
         long q = 0, r = 0;
         q = n / strLength;
         r = n % strLength;
         long partialStrLen = (r == 0) ? 0 : r;
-        long aCount = q * getLetterCount(s,s.length()) + getLetterCount(s,partialStrLen);
-        return aCount;
+        long aCount = q * getLetterCount(s,s.length()) + getLetterCount(s,partialStrLen); // Counting the a in the initial stage [ q * getLetterCount(s,s.length()) ]
+        // counting the number of partial String Length [ getLetterCount(s,partialStrLen) ]
+         return aCount;
     }
     public static long getLetterCount(String s,long strLength){
         long count = 0;
