@@ -10,7 +10,7 @@ int sum_in_range(int x, int y){
     }
     return result;
 }
-// this ia another method to solve complexity 
+// this ia another method to solve complexity, this is constant method use this 
 int sum_in_range_optimised(int x, int y){
     int n = (y - x + 1);
     int a = x;
